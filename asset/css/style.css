@@ -34,15 +34,50 @@ header {
     display: inline-block; 
     margin-right: 20px; 
 }
-.quiz{
+.Quiz{
     background: silver;
     width: 100%;
     max-width: 700px;
     margin: 100px auto 0;
     border-radius: 10px;
-    padding: 30px;
+    padding: 40px;
+   
 
 }
+
+.Quiz h1 {
+    font-size: larger 30px;
+    color: #0f0101;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.question {
+    padding: 20px 0;
+}
+ .question h2 {
+    font-size: 20px;
+    color: #0c032e;
+    font-weight:600px;
+ }
+
+
+ .answer {
+    background: white;
+    color: #0b053f ;
+    font-weight: 500;
+     width:100%;
+     border: 1px solid #0b053f;
+     padding: 10px;
+     margin: 10px 0;
+     text-align: left;
+     border-radius: 4px;
+     cursor: pointer;
+
+
+
+
+ }
 /*
 
 #social-networks {
