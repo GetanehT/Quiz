@@ -34,3 +34,26 @@ header {
     display: inline-block; 
     margin-right: 20px; 
 }
+.quiz{
+    background: silver;
+    width: 100%;
+    max-width: 700px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+/*
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #f5f1f1;
+}
