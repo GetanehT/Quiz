@@ -46,7 +46,7 @@ header {
 }
 
 #difficulty {
-    ackground: white;
+    background: white;
     color: #0b053f ;
     font-weight: 500;
      width: 20%;
@@ -55,7 +55,7 @@ header {
   
 }
 .Quiz{
-    background: silver;
+    background: rgb(184, 164, 164);
     width: 100%;
     max-width: 700px;
     margin: 100px auto 0;
@@ -81,8 +81,13 @@ header {
     font-weight:600px;
  }
 
+ .choice:hover{
+    background: #7b34ff;
+    color: #f5f1f1;
+ }
 
- .answer {
+
+ .choice {
     background: white;
     color: #0b053f ;
     font-weight: 500;
@@ -93,9 +98,6 @@ header {
      text-align: left;
      border-radius: 4px;
      cursor: pointer;
-
-
-
 
  }
 
