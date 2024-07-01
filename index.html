@@ -1,82 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Meta data for search engines-->
+    <!-- Meta data for search engines -->
     <title>Quiz</title>
     <link rel="stylesheet" href="asset/css/style.css">
-
+    <!-- FontAwesome for social network icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <header> 
-    <a href="index.html">
-        <h1 id="logo">Quiz</h1>
-    </a>
-    <na>
-        <ul id = "menu">
-            <li><a href ="index.html" class="active">Home</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="about.html">about</a></li>
-        </ul>
-    </na>
-
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Quiz</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
     </header>
-  <main>
-
-  
-  
- <div class="Quiz"> 
-    <h1>Quiz</h1> 
-    <select id="category">
-        <option value="general">General Knowledge</option>
-        <option value="science">Science</option>
-        <option value="history">History</option>
-        
-    </select>
-    <select id="difficulty">
-        <option value="easy">Easy</option>
-        <option value="medium">Medium</option>
-        <option value="hard">Hard</option>
-    </select>
-    <div class="question">
-     <h2 id="ask"> question goes here</h2>
-     <div id="choice-button"></div>
-     <button class ="choice">choice1</button>
-     <button class ="choice">choice2</button>
-     <button class ="choice">choice3</button>
-     <button class ="choice">choice4</button>
-    </div>
-    </div>
-
-</main>
-  <footer> 
+    <main>
+        <div class="Quiz">
+            <h1>Quiz</h1>
+            <div class="question">
+                <h2 id="ask">Question goes here</h2>
+                <div id="choice-button"></div>
+            </div>
+            <p id="answer" style="display: none"></p>
+            <p id="score">Score: 0</p>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+    </main>
+    <footer>
         <ul id="social-networks">
             <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener"
                     aria-label="Visit our Facebook page (opens in a new tab)">
-                    <i class="fa-brands fa-facebook"></i></a>
+                    <i class="fab fa-facebook"></i></a>
             </li>
             <li>
                 <a href="https://www.twitter.com/" target="_blank" rel="noopener"
                     aria-label="Visit our Twitter page (opens in a new tab)">
-                    <i class="fa-brands fa-twitter-square"></i></a>
+                    <i class="fab fa-twitter-square"></i></a>
             </li>
             <li>
                 <a href="https://www.youtube.com/" target="_blank" rel="noopener"
                     aria-label="Visit our YouTube page (opens in a new tab)">
-                    <i class="fa-brands fa-youtube-square"></i></a>
+                    <i class="fab fa-youtube-square"></i></a>
             </li>
             <li>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener"
                     aria-label="Visit our Instagram page (opens in a new tab)">
-                    <i class="fa-brands fa-instagram"></i></a>
+                    <i class="fab fa-instagram"></i></a>
             </li>
         </ul>
-
-  </footer>
-  <script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-

@@ -1,33 +1,72 @@
- 
-        var questions = [
-          { text: "What is the capital of Germany?", answer: "Berlin" , a:"Paris", b:"London", c: "Berlin" , d:"Madrid" },
-          { text: "Who wrote Romeo and Juliet?", answer: "William Shakespeare", a:"abebe", b:"kebede", c:"William Shakespeare" , d:"Alemu"},
-          { text: "Where is Ethiopia located?", answer: "East Africa", a:"The southern tip of Africa", b:"South America", c:"Southern Europe" , d:"East Africa"},
-          { text: "Who wrote Romeo and Juliet?", answer: "William Shakespeare", a:"abebe", b:"kebede", c:"William Shakespeare" , d:"Alemu"}
-      ];
-      
-      function checkAnswer(choice) {
-        document.getElementById("question").textContent= choice.textContent + questions[currentQuestion].answer;
-        const selectedAnswer = choice.textContent;
-        const correctAnswer = questions[currentQuestion].answer;
-        if (selectedAnswer === correctAnswer) {
-          choice.classList.add("correct");
-      //    document.getElementById("question").textContent= selectedAnswer + correctAnswer;
-  
-          score++;
-      } else {
-          choice.classList.add("wrong");
-          document.getElementById("answer").style.display = "block";
-  
-          // document.getElementById("question").textContent= selectedAnswer + correctAnswer;
-  
-      }
-      var myoptionList = document.getElementById("optionList");
-      myoptionList.setAttribute("disabled", true);
-      myoptionList.style.pointerEvents = "none";
-      // myoptionList.style.opacity = "0.5";
-  
-      document.getElementById("score").textContent = `Score: ${score}`;
-  
+// Sample questions
+const questions = [
+  {
+      question: "What is the capital of France?",
+      choices: ["Berlin", "Madrid", "Paris", "Lisbon"],
+      answer: "Paris"
+  },
+  {
+      question: "Which planet is known as the Red Planet?",
+      choices: ["Earth", "Mars", "Jupiter", "Venus"],
+      answer: "Mars"
+  },
+  {
+      question: "What is the largest ocean on Earth?",
+      choices: ["Atlantic", "Indian", "Arctic", "Pacific"],
+      answer: "Pacific"
   }
- 
+];
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+// Function to load the next question
+function loadQuestion() {
+  const currentQuestion = questions[currentQuestionIndex];
+  const questionElement = document.getElementById('ask');
+  const choicesContainer = document.getElementById('choice-button');
+
+  questionElement.textContent = currentQuestion.question;
+  choicesContainer.innerHTML = '';
+
+  currentQuestion.choices.forEach(choice => {
+      const button = document.createElement('button');
+      button.textContent = choice;
+      button.classList.add('choice');
+      button.addEventListener('click', () => selectAnswer(choice));
+      choicesContainer.appendChild(button);
+  });
+}
+
+// Function to handle the answer selection
+function selectAnswer(selectedChoice) {
+  const currentQuestion = questions[currentQuestionIndex];
+  const answerElement = document.getElementById('answer');
+  
+  if (selectedChoice === currentQuestion.answer) {
+      answerElement.textContent = "Correct!";
+      score++;
+  } else {
+      answerElement.textContent = `Wrong! The correct answer was ${currentQuestion.answer}.`;
+  }
+
+  answerElement.style.display = 'block';
+  document.getElementById('score').textContent = `Score: ${score}`;
+}
+
+// Function to move to the next question
+function nextQuestion() {
+  document.getElementById('answer').style.display = 'none';
+  currentQuestionIndex++;
+  
+  if (currentQuestionIndex < questions.length) {
+      loadQuestion();
+  } else {
+      const quizContainer = document.querySelector('.Quiz');
+      quizContainer.innerHTML = `<h1>Quiz Completed</h1>
+                                 <p>Your final score is ${score} out of ${questions.length}.</p>`;
+  }
+}
+
+// Initialize the first question
+document.addEventListener('DOMContentLoaded', loadQuestion);

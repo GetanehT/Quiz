@@ -29,78 +29,86 @@ header {
     list-style-type: none;
     margin: 10px 0 0;
     padding: 0;
-    }
+}
+
 #menu li {
     display: inline-block; 
     margin-right: 20px; 
 }
 
-#category {
-    background: white;
-    color: #0b053f ;
-    font-weight: 500;
-     width: 30%;
-     border: 1px solid #0b053f;
-     padding: 10px;
-  
+#menu li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-#difficulty {
-    background: white;
-    color: #0b053f ;
-    font-weight: 500;
-     width: 20%;
-     border: 1px solid #0b053f;
-     padding: 10px;
-  
+#menu li a.active {
+    font-weight: bold;
 }
-.Quiz{
+
+/* Main Quiz Container */
+.Quiz {
     background: rgb(184, 164, 164);
     width: 100%;
     max-width: 700px;
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 40px;
-   
-
 }
 
 .Quiz h1 {
-    font-size: larger 30px;
+    font-size: 30px;
     color: #0f0101;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
 }
+
 .question {
     padding: 20px 0;
 }
- .question h2 {
+
+.question h2 {
     font-size: 20px;
     color: #0c032e;
-    font-weight:600px;
- }
+    font-weight: 600;
+}
 
- .choice:hover{
+.choice {
+    background: white;
+    color: #0b053f;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #0b053f;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.choice:hover {
     background: #7b34ff;
     color: #f5f1f1;
- }
+}
 
+/* Answer and Score display */
+#answer {
+    margin-top: 20px;
+    font-weight: bold;
+}
 
- .choice {
-    background: white;
-    color: #0b053f ;
-    font-weight: 500;
-     width:100%;
-     border: 1px solid #0b053f;
-     padding: 10px;
-     margin: 10px 0;
-     text-align: left;
-     border-radius: 4px;
-     cursor: pointer;
+#score {
+    margin-top: 20px;
+}
 
- }
-
+/* Footer with Social Networks */
+footer {
+    margin-top: auto;
+    background-color: #0f0101;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
 
 #social-networks {
     text-align: center;
@@ -109,6 +117,7 @@ header {
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
