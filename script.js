@@ -1,61 +1,33 @@
-var questions = [
-
-  {  question: "which is the wealthest country?",
-    answers: {
-      { text: "England", correct: true },
-      { text: "Germany", correct: false},
-      { text: "USA", correct: false},
-      { text: "Australia", correct: false},
-    }
-  },
-    {  
-      question: "which is the wealthest country?",
-      answers: {
-        { text: "England", correct: false },
-        { text: "Germany", correct: false},
-        { text: "USA", correct: false},
-        { text: "Australia", correct: false},
-      }
-    }, 
-
-      {  question: "which is the wealthest country?",
-        answers: {
-          { text: "England", correct: false },
-          { text: "Germany", correct: false},
-          { text: "USA", correct: false},
-          { text: "Australia", correct: false},
-        }
-      },
+ 
+        var questions = [
+          { text: "What is the capital of Germany?", answer: "Berlin" , a:"Paris", b:"London", c: "Berlin" , d:"Madrid" },
+          { text: "Who wrote Romeo and Juliet?", answer: "William Shakespeare", a:"abebe", b:"kebede", c:"William Shakespeare" , d:"Alemu"},
+          { text: "Where is Ethiopia located?", answer: "East Africa", a:"The southern tip of Africa", b:"South America", c:"Southern Europe" , d:"East Africa"},
+          { text: "Who wrote Romeo and Juliet?", answer: "William Shakespeare", a:"abebe", b:"kebede", c:"William Shakespeare" , d:"Alemu"}
+      ];
       
-
-          {  question: "which is the wealthest country?",
-            answers: {
-              { text: "England", correct: false },
-              { text: "Germany", correct: false},
-              { text: "USA", correct: false},
-              { text: "Australia", correct: false},
-            }
-          }
-        ]
-        
-        
-
-
-function Function1()
-{
-  document.getElementById("question").innerHTML = "Hello Getaneh 1";
-}
-
-function Function2()
-{
-  document.getElementById("ask2").innerHTML = "Hello Getaneh number 2";
-}
-function Function3()
-{
-  document.getElementById("ask3").innerHTML = "Hello Getaneh number 3";
-}
-
-function Function4()
-{
-  document.getElementById("ask4").innerHTML = "Hello Getaneh number 4";
-}
+      function checkAnswer(choice) {
+        document.getElementById("question").textContent= choice.textContent + questions[currentQuestion].answer;
+        const selectedAnswer = choice.textContent;
+        const correctAnswer = questions[currentQuestion].answer;
+        if (selectedAnswer === correctAnswer) {
+          choice.classList.add("correct");
+      //    document.getElementById("question").textContent= selectedAnswer + correctAnswer;
+  
+          score++;
+      } else {
+          choice.classList.add("wrong");
+          document.getElementById("answer").style.display = "block";
+  
+          // document.getElementById("question").textContent= selectedAnswer + correctAnswer;
+  
+      }
+      var myoptionList = document.getElementById("optionList");
+      myoptionList.setAttribute("disabled", true);
+      myoptionList.style.pointerEvents = "none";
+      // myoptionList.style.opacity = "0.5";
+  
+      document.getElementById("score").textContent = `Score: ${score}`;
+  
+  }
+ 
