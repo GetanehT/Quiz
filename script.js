@@ -14,7 +14,17 @@ const questions = [
       question: "What is the largest ocean on Earth?",
       choices: ["Atlantic", "Indian", "Arctic", "Pacific"],
       answer: "Pacific"
-  }
+  },
+  {
+   question:"What is the tallest mountain in the world?",
+   choices: ["K2", "Kangchenjunga", "Mount Everest","Lhotse"],
+   answer: "Mount Everest"
+  },
+  {
+    question:"Which river is the longest in the world?",
+    choices:["Amazon", "Nile", "Yangtze", "Mississippi"],
+    answer:  "Nile"
+   }
 ];
 
 let currentQuestionIndex = 0;
