@@ -1,4 +1,6 @@
 Quiz Project
+
+
 This project is a simple, web-based quiz application designed to present multiple-choice questions to the user, track their score, and display their final score at the end. The application is built with HTML, CSS, and JavaScript, ensuring it is lightweight and easy to deploy.
 
 Table of Contents
