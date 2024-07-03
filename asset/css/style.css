@@ -13,52 +13,54 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #5a0404;
+    color: #1f045e;
     font-family: 'Lato', sans-serif;
 }
 
-/*Header*/
+/* Header */
 header {
-    background-color: #0f0101;
-    color: #fff;
+    background-color: #f7f6fa;
+    color: #0d0030;
     padding: 10px 0;
     text-align: center;
 }
-
+header h1 {
+    color: #b9afaf;
+    padding: 10px 0;
+}
 #menu {
     list-style-type: none;
     margin: 10px 0 0;
     padding: 0;
 }
-
 #menu li {
     display: inline-block; 
     margin-right: 20px; 
 }
-
 #menu li a {
-    color: #fff;
+    color: #1f045e;
     text-decoration: none;
 }
-
 #menu li a.active {
     font-weight: bold;
 }
 
 /* Main Quiz Container */
-.Quiz {
-    background: rgb(184, 164, 164);
+.quiz-container {
+    background: rgb(243, 239, 239);
     width: 100%;
     max-width: 700px;
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 40px;
+    text-align: center;
 }
 
-.Quiz h1 {
-    font-size: 30px;
+.quiz-container h1 {
+    font-size: 50px;
+    font-style: italic;
     color: #0f0101;
-    font-weight: 600;
+    font-weight: bolder;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
 }
@@ -93,12 +95,12 @@ header {
 
 /* Answer and Score display */
 #answer {
-    margin-top: 20px;
+    margin-top: 70px;
     font-weight: bold;
 }
 
 #score {
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 /* Footer with Social Networks */
