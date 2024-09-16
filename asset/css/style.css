@@ -19,7 +19,7 @@ body {
 
 /*Header*/
 header {
-    background-color: #5ad16a;
+    background-color: #44af52;
     color: #0d0030;
     padding: 10px 0;
     text-align: center;
@@ -98,10 +98,7 @@ header h1 {
     cursor: pointer;
     font-size: 18px;
 }
-.btn {
 
-
-}
 .choice:hover {
     background: #7b34ff;
     color: #f5f1f1;
@@ -112,19 +109,13 @@ header h1 {
     margin-top: 70px;
     font-weight: bold;
 }
-
-#score {
-    margin-top: 20px; 
-    font-size: 24px;
-    font-size: bold;
-}
 /* Basic Next button style */
 #next-button {
     background: #4CAF50; 
     color: #ffffff; 
     font-weight: bold; 
     width: auto; 
-    padding: 15px 30px;
+    padding: 15px 30px; 
     margin: 20px 0; 
     text-align: center; 
     border: none; 
@@ -151,11 +142,29 @@ header h1 {
     outline-offset: 2px; 
 }
 
+/* Score display style */
+#score {
+    margin-top: 20px;
+    font-size: 36px; 
+    font-weight: 700;
+    color: #ffffff; 
+    text-align: center; 
+    background: linear-gradient(135deg, #ff6f61, #d84315); 
+    background-size: 200% 200%; 
+    background-position: center;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #d84315;
+}
+#score:hover {
+    transform: scale(1.05); 
+}
 /* Footer with Social Networks */
 footer {
     margin-top: auto;
-    background-color: #5bb868;;
-    color: #5ad16a;;
+    background-color: #0f0101;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }

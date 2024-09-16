@@ -74,7 +74,7 @@ function nextQuestion() {
   } else {
       const quizContainer = document.querySelector('.Quiz');
       quizContainer.innerHTML = `<h1>Quiz Completed</h1>
-                                 <p>Your final score is ${score} out of ${questions.length}.</p>`;
+                                 <h1>Your final score is ${score} out of ${questions.length}.</h1>`;
   }
 }
 
