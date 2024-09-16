@@ -19,7 +19,7 @@ body {
 
 /*Header*/
 header {
-    background-color: #f7f6fa;
+    background-color: #5ad16a;
     color: #0d0030;
     padding: 10px 0;
     text-align: center;
@@ -30,7 +30,7 @@ header a {
     color: black;
 }
 header h1 {
-    color: black
+    color: black;
     padding: 10px 0;
     text-align: center;
 }
@@ -91,13 +91,17 @@ header h1 {
     font-weight: 500;
     width: 100%;
     border: 1px solid #0b053f;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     text-align: left;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 18px;
 }
+.btn {
 
+
+}
 .choice:hover {
     background: #7b34ff;
     color: #f5f1f1;
@@ -111,13 +115,47 @@ header h1 {
 
 #score {
     margin-top: 20px; 
+    font-size: 24px;
+    font-size: bold;
+}
+/* Basic Next button style */
+#next-button {
+    background: #4CAF50; 
+    color: #ffffff; 
+    font-weight: bold; 
+    width: auto; 
+    padding: 15px 30px;
+    margin: 20px 0; 
+    text-align: center; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    transition: all 0.3s ease; 
+}
+
+/* Next button hover effect */
+#next-button:hover {
+    background: #45a049; 
+}
+
+/* Next button active effect */
+#next-button:active {
+    background: #397d39; 
+    transform: translateY(2px); 
+}
+
+/* Next button focus effect for accessibility */
+#next-button:focus {
+    outline: 3px solid #80e27e; 
+    outline-offset: 2px; 
 }
 
 /* Footer with Social Networks */
 footer {
     margin-top: auto;
-    background-color: #0f0101;
-    color: #fff;
+    background-color: #5bb868;;
+    color: #5ad16a;;
     text-align: center;
     padding: 20px 0;
 }
