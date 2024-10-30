@@ -4,27 +4,61 @@ Quiz Project
 This project is a simple, web-based quiz application designed to present multiple-choice questions to the user, track their score, and display their final score at the end. The application is built with HTML, CSS, and JavaScript, ensuring it is lightweight and easy to deploy.
 
 Table of Contents
--Features
--Installation
--Usage
--File Structure
--JavaScript Functionality
-  -Variables
-  -Functions
--Customization
-  -Adding More Questions
-  -Changing Styles
--Dependencies
--Contributing
--License
--Contact
+* [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Features](#features)
+    * [The Home Page](#the-home-page)
+    * [The Game Page](#the-game-page)
+    * [The High Scores Page](#the-high-scores-page)
+    * [The 404 Error Page](#the-404-error-page)
+    * [Future Implementations](#future-implementations)
+  * [Accessibility](#accessibility)
 
-Features
--Multiple-choice questions: Provides a variety of questions with multiple-choice answers.
--Answer feedback: Displays whether the selected answer is correct or incorrect.
--Score tracking: Keeps track of the user's score throughout the quiz.
--Responsive design: Adapts to various screen sizes for an optimal viewing experience on both desktop and mobile devices.
--Social media integration: Includes icons for popular social networks.
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+
+* [Deployment & Local Development](#deployment--local-development)
+  * [Deployment](#deployment)
+  * [Local Development](#local-development)
+    * [How to Fork](#how-to-fork)
+    * [How to Clone](#how-to-clone)
+
+* [Testing](#testing)
+  * [Solved Bugs](#solved-bugs)
+  * [Known Bugs](#known-bugs)
+  
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
+ 
+ ### Design
+### colour-scheme
+
+  As the pages of the site have a background image, I wanted to keep the colour scheme used on the site quite small so as to not overwhelm users.  
+
+In my css file I have used variables to declare colours, and then used these throughout the css file. I was recently introduced to this method during a hackathon - it is a useful convention to use as it allows you to alter the colour throughout the website if you decide to update a colour, by changing the colour once in the variable.
+
+* I have used `#44af52` & `##000000` as the primary and secondary colours used for the sites text.
+* I have used `##44af52` as the overlay used over the sites background image.
+* I have used `#fc2f2f`  to display the wrong answers.
+* I have used `#fc2f2f` to display the correct answer.
+
+### Feature
+
+* Multiple-choice questions: Provides a variety of questions 
+  with multiple-choice answers.
+* Answer feedback: Displays whether the selected answer is 
+  correct or incorrect.
+* Score tracking: Keeps track of the user's score throughout 
+  the quiz.
+* Responsive design: Adapts to various screen sizes for an 
+  optimal viewing experience on both desktop and mobile devices.
+* Social media integration: Includes icons for popular social 
+  networks.
+  
 Installation
 To set up the project locally, follow these steps:
 
