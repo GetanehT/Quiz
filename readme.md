@@ -187,45 +187,20 @@ To clone the repository:
 
 ### Usage
 
-1.Open the index.html file:
-
--You can open this file directly in your web browser to start the quiz.
-
+1.Open the in
+You can open this file directly dex.html file:
+in your web browser to start the quiz.
 2.Answer the questions:
-
     -The first question will load automatically.
     -Click on one of the choices to select your answer.
     -Feedback will be provided, indicating whether your answer was correct or incorrect.
-
-
 3.Proceed to the next question:
-
      -Click the "Next" button to move to the next question.
      -Continue this process until you reach the end of the quiz.
-
-
 4.View your final score:
-
     -At the end of the quiz, your final score will be displayed along with the total number of questions.
-
-File Structure
-
-quiz-project/
-│
-├── asset/
-│   └── css/
-│       └── style.css   # Styling for the quiz
-│
-├── index.html          # Main HTML file
-├── about.html          # About page (optional)
-├── script.js           # JavaScript for quiz functionality
-└── README.md           # Readme file
-
-
 JavaScript Functionality
-
 Variables
-
 + questions: An array of objects where each object represents a 
   quiz question with the properties:
 
@@ -334,6 +309,22 @@ For any questions or suggestions, please open an issue on GitHub or contact the 
 
 
 
+
+
+
+
+File Structure
+
+quiz-project/
+│
+├── asset/
+│   └── css/
+│       └── style.css   # Styling for the quiz
+│
+├── index.html          # Main HTML file
+├── about.html          # About page (optional)
+├── script.js           # JavaScript for quiz functionality
+└── README.md           # Readme file
 
 
 
