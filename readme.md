@@ -55,11 +55,11 @@ In my css file I have used variables to declare colours, and then used these thr
 * Social media integration: Includes icons for popular social 
   networks.
   
-  [Quiz](https://github.com/GetanehT/Quiz/blob/main/asset/images/quiz_js.png)
+  ![Quiz](https://github.com/GetanehT/Quiz/blob/main/asset/images/quiz_js.png)
 
 
 
-  [The Score](https://github.com/GetanehT/Quiz/blob/main/asset/images/score.png)
+  ![The Score](https://github.com/GetanehT/Quiz/blob/main/asset/images/score.png)
 
 
   
