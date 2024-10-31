@@ -1,4 +1,4 @@
-### Quiz Project
+ ### Quiz Project
 
 
 This project is a simple, web-based quiz application designed to present multiple-choice questions to the user, track their score, and display their final score at the end. The application is built with HTML, CSS, and JavaScript, ensuring it is lightweight and easy to deploy.
@@ -23,7 +23,6 @@ Table of Contents
     * [How to Clone](#how-to-clone)
 * [Testing](#testing)
   * [Solved Bugs](#solved-bugs)
-  * [Known Bugs](#known-bugs)
   
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -246,6 +245,16 @@ To clone the repository:
 1. Adds an event listener for the DOMContentLoaded event to 
   call loadQuestion when the page has finished loading.
 
+### Bug Summary
+
+* Bug: Score Button Increment Issue
+* Description: Initially, the scoring button in the quiz was 
+  adding to the score with every click, leading to 
+   unintentional score increments when users clicked the button 
+   multiple times.
+
+* Solution
+The issue was resolved by adjusting the scoring logic to ensure that the score increases only when the correct conditions are met, avoiding unintended increments with each button click. This fix ensures that scores are awarded appropriately for each question in the quiz.
 
 File Structure
 
