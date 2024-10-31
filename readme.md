@@ -59,6 +59,8 @@ In my css file I have used variables to declare colours, and then used these thr
 
 
 
+
+
   ![The Score](https://github.com/GetanehT/Quiz/blob/main/asset/images/score.png)
 
 
