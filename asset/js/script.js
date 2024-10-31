@@ -56,6 +56,12 @@ function selectAnswer(selectedChoice) {
    
    answerElement.classList.remove('correct', 'incorrect');
 
+   // Disable all choice buttons to prevent multiple selections
+  const choices = document.querySelectorAll('.choice');
+  choices.forEach(button => {
+      button.disabled = true; 
+  });
+
    if (selectedChoice === currentQuestion.answer) {
        answerElement.textContent = "Correct!";
        answerElement.classList.add('correct');
