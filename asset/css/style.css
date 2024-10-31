@@ -141,6 +141,22 @@ header h1 {
     outline: 3px solid #80e27e; 
     outline-offset: 2px; 
 }
+.correct {
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 2em;
+}
+
+.incorrect {
+    background-color: #f44336; 
+    color: white; 
+    font-size: 2em;
+}
+
+/* Optional: Add a transition effect */
+.choice {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
 
 /* Score display style */
 #score {

@@ -53,12 +53,17 @@ function selectAnswer(selectedChoice) {
   const currentQuestion = questions[currentQuestionIndex];
   const answerElement = document.getElementById('answer');
   
-  if (selectedChoice === currentQuestion.answer) {
-      answerElement.textContent = "Correct!";
-      score++;
-  } else {
-      answerElement.textContent = `Wrong! The correct answer was ${currentQuestion.answer}.`;
-  }
+   
+   answerElement.classList.remove('correct', 'incorrect');
+
+   if (selectedChoice === currentQuestion.answer) {
+       answerElement.textContent = "Correct!";
+       answerElement.classList.add('correct');
+       score++;
+   } else {
+       answerElement.textContent = `Wrong! The correct answer was ${currentQuestion.answer}.`;
+       answerElement.classList.add('incorrect');
+   }
 
   answerElement.style.display = 'block';
   document.getElementById('score').textContent = `Score: ${score}`;
