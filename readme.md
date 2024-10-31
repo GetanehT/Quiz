@@ -54,6 +54,13 @@ In my css file I have used variables to declare colours, and then used these thr
   optimal viewing experience on both desktop and mobile devices.
 * Social media integration: Includes icons for popular social 
   networks.
+  
+  [Quiz](https://github.com/GetanehT/Quiz/blob/main/asset/images/quiz_js.png)
+
+
+
+  [The Score](https://github.com/GetanehT/Quiz/blob/main/asset/images/score.png)
+
 
   
 #### Future Implementations
@@ -127,6 +134,12 @@ In future implementations I would like to:
   and collaborating with others. This allows for tracking 
   changes, reverting to previous states, and facilitating 
   contributions from other developers.
+  
+### File Structure
+
+
+[File Structure](https://github.com/GetanehT/Quiz/blob/main/asset/images/file%20.png)
+
 
   ### Languages Used
   
@@ -183,6 +196,7 @@ To clone the repository:
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
 
 ### Usage
 
