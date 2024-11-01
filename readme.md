@@ -21,7 +21,7 @@ Table of Contents
   * [Local Development](#local-development)
     * [How to Fork](#how-to-fork)
     * [How to Clone](#how-to-clone)
-* [Testing]
+* [Testing](#Testing)
   * [Solved Bugs](#solved-bugs)
   
  
