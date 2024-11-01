@@ -21,14 +21,9 @@ Table of Contents
   * [Local Development](#local-development)
     * [How to Fork](#how-to-fork)
     * [How to Clone](#how-to-clone)
-* [Testing](#testing)
+* [Testing]
   * [Solved Bugs](#solved-bugs)
   
-* [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-  * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
  
  ### Design
 ### colour-scheme
@@ -140,7 +135,7 @@ In future implementations I would like to:
 ### File Structure
 
 
-[File Structure](https://github.com/GetanehT/Quiz/blob/main/asset/images/file%20.png)
+![File Structure](https://github.com/GetanehT/Quiz/blob/main/asset/images/file%20.png)
 
 
   ### Languages Used
@@ -260,6 +255,7 @@ To clone the repository:
 1. Adds an event listener for the DOMContentLoaded event to 
   call loadQuestion when the page has finished loading.
 
+### Testing
 ### Bug Summary
 
 * Bug: Score Button Increment Issue
@@ -271,18 +267,6 @@ To clone the repository:
 * Solution
 The issue was resolved by adjusting the scoring logic to ensure that the score increases only when the correct conditions are met, avoiding unintended increments with each button click. This fix ensures that scores are awarded appropriately for each question in the quiz.
 
-File Structure
-
-quiz-project/
-│
-├── asset/
-│   └── css/
-│       └── style.css   # Styling for the quiz
-│
-├── index.html          # Main HTML file
-├── about.html          # About page (optional)
-├── script.js           # JavaScript for quiz functionality
-└── README.md           # Readme file
 
 
 
