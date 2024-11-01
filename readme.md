@@ -179,7 +179,7 @@ In future implementations I would like to:
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [GetanehT](https://github.com/GetanehT/Quiz)
+2. Go to the repository for this project, [GetanehT/Quiz](https://github.com/GetanehT/Quiz)
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
